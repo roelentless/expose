@@ -1,7 +1,7 @@
 [
-	{
-		"url_key": "production-deploy",
-		"when": [
+    {
+        "url_key": "production-deploy",
+        "when": [
           {
             "filter": "github-webhook-valid",
             "secret": "webhook password"
@@ -11,16 +11,16 @@
               "dir": "/path/to/local/repo",
               "value": "remote-different"
           }
-		],
-		"tasks": [
-			{
-				"dir": "/tmp",
-				"exec": "echo 'execute deploy script'"
-			},
-			{
+        ],
+        "tasks": [
+            {
+                "dir": "/tmp",
+                "exec": "echo 'execute deploy script'"
+            },
+            {
                 "dir": "/tmp",
                 "exec": "echo 'notify chat service'"
             }
-		]
-	}
+        ]
+    }
 ]
