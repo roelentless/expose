@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# forever is required: npm install -g forever
+
+forever -o $1 -e $2 app.js
