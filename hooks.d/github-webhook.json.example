@@ -9,7 +9,8 @@
           {
               "filter": "git-remote-status",
               "dir": "/path/to/local/repo",
-              "value": "remote-different"
+              "value": "remote-different",
+              "sudo_user": "optional"
           }
         ],
         "tasks": [
@@ -19,7 +20,8 @@
             },
             {
                 "dir": "/tmp",
-                "exec": "echo 'notify chat service'"
+                "exec": "echo 'notify chat service'",
+                "sudo_user": "optional"
             }
         ]
     }
