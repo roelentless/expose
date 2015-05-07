@@ -4,6 +4,10 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var expose = require('./lib/expose.js');
+var bodyParser = require('body-parser');
+
+
+app.use(bodyParser.json({ limit: '20mb' }));
 
 
 // load config (optional)
